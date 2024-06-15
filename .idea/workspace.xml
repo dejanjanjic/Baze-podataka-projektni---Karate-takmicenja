@@ -4,28 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25b2fdeb-ae37-44dc-a620-58905e0229a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/DelegatDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/DoktorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicenjeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionAddNewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionCodebookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Takmicenje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+    <list default="true" id="25b2fdeb-ae37-44dc-a620-58905e0229a3" name="Changes" comment="Inicijalni komit, uradjen sifarnik takmicenja">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/KlubDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicarDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competitor/CompetitorAddNewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competitor/CompetitorCodebookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competitor/CompetitorDeleteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Klub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicenjeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicenjeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionCodebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionCodebookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Takmicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Takmicar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/competitor_codebook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/competitor_codebook.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +93,31 @@
       <option name="presentableId" value="Default" />
       <updated>1718280386328</updated>
     </task>
+    <task id="LOCAL-00001" summary="Inicijalni komit, uradjen sifarnik takmicenja">
+      <option name="closed" value="true" />
+      <created>1718438076046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718438076046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Inicijalni komit, uradjen sifarnik takmicenja" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicijalni komit, uradjen sifarnik takmicenja" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

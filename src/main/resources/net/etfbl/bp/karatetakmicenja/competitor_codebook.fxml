@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.karatetakmicenja.gui.competition.CompetitionCodebookController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.karatetakmicenja.gui.competitor.CompetitorCodebookController">
    <children>
       <GridPane prefHeight="420.0" prefWidth="600.0">
         <columnConstraints>
@@ -31,7 +31,7 @@
          <children>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label layoutX="19.0" layoutY="14.0" prefHeight="32.0" prefWidth="183.0" text="Šifarnik takmičenja" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="398.0" AnchorPane.topAnchor="14.0">
+                  <Label layoutX="19.0" layoutY="14.0" prefHeight="32.0" prefWidth="183.0" text="Šifarnik takmičara" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="398.0" AnchorPane.topAnchor="14.0">
                      <font>
                         <Font name="Century" size="19.0" />
                      </font>
@@ -73,15 +73,15 @@
                <children>
                   <TableView fx:id="competitionTable" layoutY="-1.0" prefHeight="254.0" prefWidth="600.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
                     <columns>
-                      <TableColumn fx:id="idTakmicenjaColumn" prefWidth="81.0" text="IdTakmicenja" />
-                      <TableColumn fx:id="nazivColumn" prefWidth="166.0" text="Naziv" />
-                        <TableColumn fx:id="datumOdrzavanjaColumn" minWidth="7.0" prefWidth="108.0" text="DatumOdrzavanja" />
-                        <TableColumn fx:id="mjestoOdrzavanjaColumn" minWidth="0.0" prefWidth="109.0" text="MjestoOdrzavanja" />
-                        <TableColumn fx:id="idDoktoraColumn" minWidth="0.0" prefWidth="66.0" text="IdDoktora" />
-                        <TableColumn fx:id="idDelegataColumn" prefWidth="69.0" text="IdDelegata" />
+                      <TableColumn fx:id="idTakmicaraColumn" prefWidth="81.0" text="IdTakmičara" />
+                      <TableColumn fx:id="imeColumn" prefWidth="109.0" text="Ime" />
+                        <TableColumn fx:id="prezimeColumn" minWidth="7.0" prefWidth="140.0" text="Prezime" />
+                        <TableColumn fx:id="datumRodjenjaColumn" minWidth="0.0" prefWidth="114.0" text="Datum rodjenja" />
+                        <TableColumn fx:id="kilazaColumn" minWidth="0.0" prefWidth="86.0" text="Kilaža" />
+                        <TableColumn fx:id="idKlubaColumn" prefWidth="69.0" text="IdKluba" />
                     </columns>
                       <placeholder>
-                          <Label prefHeight="17.0" prefWidth="129.0" text="Nema takmičenja u bazi" />
+                          <Label prefHeight="17.0" prefWidth="129.0" text="Nema takmičara u bazi" />
                       </placeholder>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -91,12 +91,12 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
                <children>
-                  <ImageView fx:id="plusImageView" fitHeight="25.0" fitWidth="25.0" layoutX="508.0" layoutY="14.0" onMouseClicked="#addNewCompetition" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="508.0" AnchorPane.rightAnchor="67.0">
+                  <ImageView fx:id="plusImageView" fitHeight="25.0" fitWidth="25.0" layoutX="508.0" layoutY="14.0" onMouseClicked="#addNewCompetitor" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="508.0" AnchorPane.rightAnchor="67.0">
                      <image>
                         <Image url="@plus.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="deleteImageView" fitHeight="25.0" fitWidth="25.0" layoutX="544.0" layoutY="14.0" onMouseClicked="#deleteCompetition" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="31.0">
+                  <ImageView fx:id="deleteImageView" fitHeight="25.0" fitWidth="25.0" layoutX="544.0" layoutY="14.0" onMouseClicked="#deleteCompetitor" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="31.0">
                      <image>
                         <Image url="@delete.png" />
                      </image>

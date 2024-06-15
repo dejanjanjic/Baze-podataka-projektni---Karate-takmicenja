@@ -13,7 +13,6 @@ public class TakmicenjeDAO {
     private static final String SQL_SELECT = "SELECT * FROM takmicenje where IdTakmicenja=?";
     private static final String SQL_INSERT = "INSERT INTO takmicenje (IdTakmicenja, Naziv, DatumOdrzavanja, MjestoOdrzavanja, IdDoktora, IdDelegata) VALUES (null, ?, ?, ?, ?, ?)";
     private static final String SQL_UPDATE = "UPDATE takmicenje SET Naziv=?, DatumOdrzavanja=?, MjestoOdrzavanja=?, IdDoktora=?, IdDelegata=? WHERE IdTakmicenja=?";
-    private static final String SQL_UPDATE_NAZIV = "UPDATE takmicenje SET Naziv=? WHERE IdTakmicenja=?";
     private static final String SQL_DELETE = "DELETE FROM takmicenje WHERE IdTakmicenja=?";
 
     public List<Takmicenje> selectAll() {

@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 
@@ -108,6 +109,17 @@ public class CompetitionCodebookController {
         String id = searchTextField.getText();
 
         TakmicenjeDAO takmicenjeDAO = new TakmicenjeDAO();
+        try
+        {
+            int idInt = Integer.parseInt(id);
+        }catch(Exception e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Greška");
+            alert.setHeaderText(null);
+            alert.setContentText("ID mora biti broj");
+            alert.showAndWait();
+            return;
+        }
         Takmicenje takmicenje = takmicenjeDAO.select(Integer.parseInt(id));
 
         competitionTable.getItems().clear();

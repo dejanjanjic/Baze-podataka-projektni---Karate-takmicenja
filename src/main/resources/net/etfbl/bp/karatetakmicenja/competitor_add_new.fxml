@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.karatetakmicenja.gui.competitor.CompetitorAddNewController">
+   <children>
+      <AnchorPane prefHeight="318.0" prefWidth="364.0">
+         <children>
+            <Label layoutX="96.0" layoutY="84.0" prefHeight="16.0" prefWidth="37.0" text="Ime">
+               <font>
+                  <Font name="Century" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="imeTextField" layoutX="143.0" layoutY="79.0" prefHeight="25.0" prefWidth="154.0" />
+            <Label layoutX="74.0" layoutY="116.0" text="Prezime">
+               <font>
+                  <Font name="Century" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prezimeTextField" layoutX="143.0" layoutY="111.0" prefHeight="25.0" prefWidth="154.0" />
+            <Label layoutX="38.0" layoutY="149.0" text="Datum rođenja">
+               <font>
+                  <Font name="Century" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="183.0" text="Kilaža">
+               <font>
+                  <Font name="Century" size="13.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datumDatePicker" layoutX="143.0" layoutY="144.0" prefHeight="25.0" prefWidth="154.0" />
+            <Label layoutX="99.0" layoutY="217.0" text="Klub">
+               <font>
+                  <Font name="Century" size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="klubChoiceBox" layoutX="143.0" layoutY="212.0" prefHeight="25.0" prefWidth="154.0" />
+            <Button fx:id="dodajButton" layoutX="249.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#addCompetitor" text="Dodaj" />
+            <TextField fx:id="kilazaTextField" layoutX="143.0" layoutY="178.0" prefHeight="25.0" prefWidth="154.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

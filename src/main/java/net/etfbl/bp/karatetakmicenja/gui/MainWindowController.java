@@ -49,7 +49,16 @@ public class MainWindowController {
     }
 
     @FXML
-    void competitorMenuItemClicked(ActionEvent event) {
-        System.out.println("radi2");
+    void competitorMenuItemClicked(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("competitor_codebook.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 420);
+        stage.setTitle("Šifarnik takmičara");
+        stage.setScene(scene);
+
+        stage.setX(500);
+        stage.setY(200);
+
+        stage.show();
     }
 }
