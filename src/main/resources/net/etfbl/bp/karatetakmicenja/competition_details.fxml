@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.bp.karatetakmicenja.gui.competition.CompetitionDetailsController">
+   <children>
+      <Accordion fx:id="kategorijeAccordion" layoutY="84.0" prefHeight="233.0" prefWidth="600.0" />
+      <Label fx:id="competitionNameLabel" layoutX="40.0" layoutY="14.0" prefHeight="58.0" prefWidth="492.0" text="Naziv takmicenja">
+         <font>
+            <Font name="Century" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="474.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#addCompetitor" text="Dodaj takmičara" />
+      <Button layoutX="300.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#evidentirajPlasmanButtonClicked" text="Evidentiraj plasman" />
+      <TextField fx:id="plasmanTextField" layoutX="243.0" layoutY="338.0" prefHeight="25.0" prefWidth="50.0" />
+      <ImageView fitHeight="31.0" fitWidth="43.0" layoutX="510.0" layoutY="28.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

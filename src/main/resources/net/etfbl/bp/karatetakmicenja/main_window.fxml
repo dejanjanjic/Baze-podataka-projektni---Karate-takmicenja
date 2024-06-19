@@ -18,16 +18,7 @@
                         <MenuItem fx:id="competitorMenuItem" mnemonicParsing="false" onAction="#competitorMenuItemClicked" text="Takmičari" />
                   </items>
                 </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-                  <Menu mnemonicParsing="false" text="Unspecified Menu">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Action 1" />
-                    </items>
-                  </Menu>
+                <Menu fx:id="takmicenjaMenuField" mnemonicParsing="false" text="Takmičenja" />
               </menus>
             </MenuBar>
          </top>

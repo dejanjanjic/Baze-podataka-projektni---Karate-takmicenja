@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25b2fdeb-ae37-44dc-a620-58905e0229a3" name="Changes" comment="Inicijalni komit, uradjen sifarnik takmicenja">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/KlubDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicarDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competitor/CompetitorAddNewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competitor/CompetitorCodebookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competitor/CompetitorDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Klub.java" afterDir="false" />
+    <list default="true" id="25b2fdeb-ae37-44dc-a620-58905e0229a3" name="Changes" comment="Uradjen sifarnik takmicara">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/KategorijaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicariUKategorijiDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicarskaJedinicaNaTakmicenjuUKategorijiDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/AddCompetitorInCompetitionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionDetailsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Kategorija.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/TakmicariUKategoriji.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/TakmicarskaJedinicaNaTakmicenjuUKategoriji.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicenjeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/dao/TakmicenjeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionCodebookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionCodebookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Takmicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/model/Takmicar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/competitor_codebook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/competitor_codebook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionDeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/etfbl/bp/karatetakmicenja/gui/competition/CompetitionDeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/competitor_delete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/competitor_delete.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/main_window.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/net/etfbl/bp/karatetakmicenja/main_window.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718438076046</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Uradjen sifarnik takmicara">
+      <option name="closed" value="true" />
+      <created>1718464380535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718464380535</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicijalni komit, uradjen sifarnik takmicenja" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicijalni komit, uradjen sifarnik takmicenja" />
+    <MESSAGE value="Uradjen sifarnik takmicara" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uradjen sifarnik takmicara" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

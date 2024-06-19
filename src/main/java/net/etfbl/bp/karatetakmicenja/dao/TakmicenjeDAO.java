@@ -121,7 +121,7 @@ public class TakmicenjeDAO {
             ps = DBUtil.prepareStatement(c, SQL_DELETE, false, values);
             retVal = ps.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            return 0;
         } finally {
             DBUtil.close(ps, c);
         }
